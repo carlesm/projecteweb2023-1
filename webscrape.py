@@ -38,7 +38,7 @@ class WebScrape(object):
         # llegir html
         self.parse_html()
         # retornar dades
-        pass
+        return self.data
 
 
 if __name__=="__main__":
