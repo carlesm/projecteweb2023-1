@@ -8,6 +8,7 @@ packages = [{include = "projecteweb2023_1"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+urllib3 = "^1.26.14"
 
 
 [build-system]
