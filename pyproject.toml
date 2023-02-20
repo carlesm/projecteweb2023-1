@@ -10,6 +10,7 @@ packages = [{include = "projecteweb2023_1"}]
 python = "^3.11"
 urllib3 = "^1.26.14"
 bs4 = "^0.0.1"
+xmltodict = "^0.13.0"
 
 
 [build-system]
