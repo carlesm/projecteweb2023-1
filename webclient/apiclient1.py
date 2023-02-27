@@ -5,7 +5,7 @@ import pprint
 
 class ArxivClient(object):
     def __init__(self) -> None:
-        self.url = "http://export.arxiv.org/api/query?start=0&max_results=2&search_query=all:"
+        self.url = "http://export.arxiv.org/api/query?start=0&max_results=10&search_query=all:"
         pass
 
     def query_arxiv(self, query):
@@ -19,8 +19,6 @@ class ArxivClient(object):
 
     def extract_data(self, data):
         results = []
-        print(data)
-        print(type(data))
         for e in data["feed"]["entry"]:
             title = e["title"]
             if len(e["author"]) > 1:
