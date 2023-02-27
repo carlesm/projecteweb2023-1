@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+import web.views
+
 urlpatterns = [
+    path('', web.views.root, name="Index"),
+    path('bar/<int:bar_id>', web.views.bar, name="Bar"),
+    path('tapa/<int:pk>', web.views.TapaView.as_view(), name="Tapa"),
     path('admin/', admin.site.urls),
 ]
