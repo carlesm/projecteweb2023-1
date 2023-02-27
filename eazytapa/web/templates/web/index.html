@@ -1,0 +1,9 @@
+
+<H1>On anar de tapes?</H1> 
+
+<ul>
+
+    {% for bar in bars %}
+    <li><a href={% url 'Bar' bar.id %}> {{ bar.name }} </a></li>
+    {% endfor %}
+</ul>

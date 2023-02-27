@@ -1,0 +1,9 @@
+
+{{ bar }}
+
+
+<ol>
+    {% for tapa in bar.tapa_set.all %}
+    <li><a href={% url "Tapa" tapa.id %}>{{ tapa.name}}</a></li>
+    {%  endfor %}
+</ol>
